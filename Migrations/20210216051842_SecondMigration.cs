@@ -2,7 +2,7 @@
 
 namespace EFCoreTutoriaslFirstApp.Migrations
 {
-    public partial class CreateSchoolDb : Migration
+    public partial class SecondMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

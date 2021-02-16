@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EFCoreTutoriaslFirstApp.DAL;
+using EFCoreTutoriaslFirstApp.Models;
+using System;
 
 namespace EFCoreTutoriaslFirstApp
 {
@@ -6,7 +8,17 @@ namespace EFCoreTutoriaslFirstApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var context = new SchoolContext())
+            {
+                var std = new Student()
+                {
+                    Name = "Bill Sampson"
+                };
+
+                context.Student.Add(std);
+                context.SaveChanges();
+            }
+            
         }
     }
 }

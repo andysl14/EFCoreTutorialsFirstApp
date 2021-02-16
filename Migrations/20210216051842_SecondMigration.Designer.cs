@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCoreTutoriaslFirstApp.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20210216051134_CreateSchoolDb")]
-    partial class CreateSchoolDb
+    [Migration("20210216051842_SecondMigration")]
+    partial class SecondMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
